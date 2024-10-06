@@ -2,13 +2,14 @@ public class Main {
     public static void main(String[] args){
         System.out.println("Hello world");
 
+        Shelter myShelter = new Shelter("Hairball's Sanctuary");
+
         Dog myDog = new Dog("Kip", 10, true);
         Cat myCat = new Cat("Leia", 5, 9);
 
-        System.out.println(myDog.toString());
-        System.out.println(myDog.getNoise());
+        myShelter.addAnimal(myDog);
+        myShelter.addAnimal(myCat);
 
-        System.out.println(myCat.toString());
-        System.out.println(myCat.getNoise());
+        myShelter.displayShelter(true);
     }
 }
