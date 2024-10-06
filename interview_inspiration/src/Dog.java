@@ -11,6 +11,10 @@ public class Dog extends Animal{
         return barksAtStrangers;
     }
 
+    public String getNoise(){
+        return "Woof";
+    }
+
     @Override
     public String toString(){
         return "Name: " + getName() + ", Age: " + getAge() + ", Barks at strangers: " + getBarksAtStrangers();
