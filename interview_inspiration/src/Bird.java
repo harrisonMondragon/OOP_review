@@ -1,22 +1,23 @@
 public class Bird extends Animal {
 
-    private String color;
+    private int wingspan;
 
-    public Bird(String name, int age, String color){
+    public Bird(String name, int age, int wingspan){
         super(name, age);
-        this.color = color;
+        this.wingspan = wingspan;
     }
 
-    public String getColor(){
-        return color;
+    public int getWingspan(){
+        return wingspan;
     }
 
+    @Override
     public String getNoise(){
         return "Chirp";
     }
 
     @Override
     public String toString(){
-        return "Name: " + getName() + ", Age: " + getAge() + ", Color: " + getColor();
+        return "Name: " + getName() + ", Age: " + getAge() + ", Wingspan: " + getWingspan();
     }
 }

@@ -1,9 +1,9 @@
-public class Duck extends Animal{
+public class Duck extends Bird{
     
     private String featherColor;
 
-    public Duck(String name, int age, String featherColor){
-        super(name, age);
+    public Duck(String name, int age, int wingspan, String featherColor){
+        super(name, age, wingspan);
         this.featherColor = featherColor;
     }
 
@@ -11,12 +11,13 @@ public class Duck extends Animal{
         return featherColor;
     }
 
+    @Override
     public String getNoise(){
         return "Quack";
     }
 
     @Override
     public String toString(){
-        return "Name: " + getName() + ", Age: " + getAge() + ", Feather color: " + getFeatherColor();
+        return "Name: " + getName() + ", Age: " + getAge() + "Wingspan: " + getWingspan() + ", Feather color: " + getFeatherColor();
     }
 }

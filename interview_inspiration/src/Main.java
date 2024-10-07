@@ -6,9 +6,9 @@ public class Main {
 
         Dog myDog = new Dog("Kip", 10, true);
         Cat myCat = new Cat("Leia", 5, 9);
-        Bird myBird = new Bird("TicTac", 3, "blue");
+        Bird myBird = new Bird("TicTac", 3, 26);
         Otter myOtter = new Otter("Carl", 7, true);
-        Duck myDuck = new Duck("Glep", 22, "Blue-brown");
+        Duck myDuck = new Duck("Glep", 22, 92,"Blue-brown");
 
         myShelter.addAnimal(myDog);
         myShelter.addAnimal(myCat);
