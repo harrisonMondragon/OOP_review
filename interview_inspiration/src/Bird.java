@@ -35,6 +35,6 @@ public class Bird extends Animal implements Flyable{
 
     @Override
     public void fly(int height){
-        System.out.println(getName() + " flew to " + height + "ft");
+        System.out.println(getName() + " is flying to " + height + "ft");
     }
 }

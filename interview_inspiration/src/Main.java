@@ -21,5 +21,14 @@ public class Main {
         myDuck.takeOff();
         myDuck.fly(20);
         myDuck.land();
+
+        myOtter.swim();
+        myOtter.dive(9);
+        myOtter.surface();
+
+        myDuck.swim();
+        myDuck.dive(3);
+        myDuck.surface();
+
     }
 }
