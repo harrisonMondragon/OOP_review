@@ -11,6 +11,7 @@ public class Cat extends Animal{
         return lives;
     }
 
+    @Override
     public String getNoise(){
         return "Meow";
     }

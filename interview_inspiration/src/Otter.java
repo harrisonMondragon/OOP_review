@@ -11,6 +11,7 @@ public class Otter extends Animal{
         return hasRock;
     }
 
+    @Override
     public String getNoise(){
         return "Squeak";
     }
