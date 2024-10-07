@@ -34,5 +34,8 @@ public class Main {
         myOtter.changeSpeed(2);
         myOtter.stop();
 
+        System.out.println();
+        myShelter.exerciseAnimals();
+
     }
 }
