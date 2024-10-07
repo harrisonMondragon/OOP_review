@@ -17,5 +17,9 @@ public class Main {
         myShelter.addAnimal(myDuck);
 
         myShelter.displayShelter(true);
+
+        myDuck.takeOff();
+        myDuck.fly(20);
+        myDuck.land();
     }
 }

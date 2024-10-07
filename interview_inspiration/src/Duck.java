@@ -18,6 +18,6 @@ public class Duck extends Bird{
 
     @Override
     public String toString(){
-        return "Name: " + getName() + ", Age: " + getAge() + "Wingspan: " + getWingspan() + ", Feather color: " + getFeatherColor();
+        return super.toString() + ", Feather color: " + getFeatherColor();
     }
 }
