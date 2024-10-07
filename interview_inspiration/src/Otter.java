@@ -1,4 +1,4 @@
-public class Otter extends Animal implements Swimmable{
+public class Otter extends Animal implements Swimmable, Walkable{
     
     private boolean hasRock;
 
@@ -36,5 +36,26 @@ public class Otter extends Animal implements Swimmable{
     @Override
     public void dive(int depth){
         System.out.println(getName() + " is diving to " + depth + "ft");
+    }
+
+    // Walkable overrides
+
+    @Override
+    public void walk(){
+        System.out.println(getName() + " is walking on little feet");
+    }
+
+    @Override
+    public void stop(){
+        String message = getName() + " stops and sits";
+        if(hasRock){
+            message += " then plays with thier rock";
+        }
+        System.out.println(message);
+    }
+
+    @Override
+    public void changeSpeed(int speed){
+        System.out.println(getName() + " stars strolling at " + speed + "ft/sec");
     }
 }

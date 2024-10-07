@@ -1,5 +1,5 @@
 public interface Flyable {
-    void takeOff();
+    void fly();
+    void glide(int duration);
     void land();
-    void fly(int height);
 }

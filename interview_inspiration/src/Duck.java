@@ -21,6 +21,13 @@ public class Duck extends Bird implements Swimmable{
         return super.toString() + ", Feather color: " + getFeatherColor();
     }
 
+    // Flyable overrides
+
+    @Override
+    public void land(){
+        System.out.println(getName() + " is landing on water");
+    }
+
     // Swimmable overrides
 
     @Override

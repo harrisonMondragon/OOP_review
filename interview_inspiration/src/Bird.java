@@ -24,17 +24,17 @@ public class Bird extends Animal implements Flyable{
     // Flyable overrides
 
     @Override
-    public void takeOff(){
-        System.out.println(getName() + " is taking off");
+    public void fly(){
+        System.out.println(getName() + " is flying");
+    }
+
+    @Override
+    public void glide(int duration){
+        System.out.println(getName() + " is gliding for " + duration + "mins");
     }
 
     @Override
     public void land(){
         System.out.println(getName() + " is landing");
-    }
-
-    @Override
-    public void fly(int height){
-        System.out.println(getName() + " is flying to " + height + "ft");
     }
 }

@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args){
-        System.out.println("Hello world");
+        System.out.println("Hello world\n");
 
         Shelter myShelter = new Shelter("Hairball's Sanctuary");
 
@@ -18,8 +18,8 @@ public class Main {
 
         myShelter.displayShelter(true);
 
-        myDuck.takeOff();
-        myDuck.fly(20);
+        myDuck.fly();
+        myDuck.glide(20);
         myDuck.land();
 
         myOtter.swim();
@@ -29,6 +29,10 @@ public class Main {
         myDuck.swim();
         myDuck.dive(3);
         myDuck.surface();
+
+        myOtter.walk();
+        myOtter.changeSpeed(2);
+        myOtter.stop();
 
     }
 }

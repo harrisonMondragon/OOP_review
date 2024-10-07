@@ -32,6 +32,8 @@ public class Shelter {
 
             System.out.println(message);
         }
+
+        System.out.println();
     }
 
 }
