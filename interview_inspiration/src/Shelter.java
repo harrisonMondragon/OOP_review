@@ -23,12 +23,14 @@ public class Shelter {
         System.out.println("Animals of the "  + name + " shelter:");
 
         for(Animal animal: animals){
+
+            String message = "Type: " + animal.getClass().getSimpleName() + ", " + animal.toString();
+        
             if(withNoise){
-                System.out.println(animal.toString() + ", Says: " + animal.getNoise());
+                message += ", Says: " + animal.getNoise();
             }
-            else{
-                System.out.println(animal.toString());
-            }
+
+            System.out.println(message);
         }
     }
 
